@@ -1,29 +1,23 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Person from './Person.js';
-
+import {Route, BrowserRouter} from 'react-router-dom'
+import Home from './Pages/Home'
+import Femme from './Pages/Femme'
+import Homme from './Pages/Homme'
+import Enfant from './Pages/Enfant'
+import Categorie from './Pages/Categorie'
 // functional component
 const App = () => {
-  const [products, setProducts] = useState([
-    {name : 'tv samsung', size :"40", price: 1500},
-    {name : 'tv Lg', size :"50", price: 2500},
-    {name : 'tv sony', size :"60", price: 3500},
-  ])
-  const [open, setOpen] = useState(false)
-  const change = () => {
-    setOpen(!open)
-  }
-  return (
-    <div className="App">
-      {/* {
-        products.map(product => 
-          <Person name = {product.name} size = {product.size} price = {product.price}/>
-        )
-      } */}
-      <button onClick={change}>show</button>
-      {open && <p>test</p>}
-      {/* {(open=="maha") ? <p>ok</p> : <p>non</p>} */}
-    </div>
+
+
+   return (
+     <BrowserRouter>
+      <Route exact path='/' component={Home}/>
+      <Route exact path='/femme' component={Femme}/>
+      <Route exact path='/homme' component={Homme}/>
+      <Route exact path='/enfant' component={Enfant}/>
+      <Route exact path='/categorie' component={Categorie}/>
+     </BrowserRouter>
   );
 }
 
