@@ -5,7 +5,7 @@ import NavbarFemme from "../Components/Showcase/NavbarFemme";
 const Homme = () => {
     return ( 
         <>
-        <Navbar activeMenu="homme"/>
+        <Navbar/>
         <NavbarFemme/>
         </>
         

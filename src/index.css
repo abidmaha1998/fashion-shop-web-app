@@ -35,3 +35,7 @@ a.navbarListLink:hover{
   background-color:  rgba(255, 255, 255, 0.12);
   cursor: pointer;
 }
+.hero.is-primary {
+  background-color: #00d1b2;
+  color: #fff;
+}

@@ -1,15 +1,14 @@
-import { Components } from "antd/lib/date-picker/generatePicker";
-import { Component } from "react";
+import Item from "../Components/Showcase/Item";
 import Navbar from "../Components/Showcase/Navbar";
 import NavbarFemme from "../Components/Showcase/NavbarFemme";
-const Enfant = () => {
+const SeulItem = () => {
     return ( 
         <>
-        <Navbar />
+        <Navbar/>
         <NavbarFemme/>
+        <Item/>
         </>
-        
      );
 }
  
-export default Enfant;
+export default SeulItem;
