@@ -2,11 +2,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
-import { Layout, Menu, Input, Row, Col, Button, Table } from 'antd';
+import { Layout, Menu, Input, Row, Col, Table } from 'antd';
 import {
     DesktopOutlined, PieChartOutlined,
 } from '@ant-design/icons';
-import Search from 'antd/lib/input/Search';
+
 const CompadminCommandes = () => {
     const { Header, Content, Footer, Sider } = Layout;
     const { SubMenu } = Menu;
